@@ -1,3 +1,5 @@
+import cities from "./cities.json";
+
 export const internalLinks = {
   blog: [
     { title: "Harga Undangan Digital", url: "/blog/harga-undangan-digital" },
@@ -5,9 +7,8 @@ export const internalLinks = {
     { title: "Undangan Digital vs Cetak", url: "/blog/undangan-digital-vs-cetak" }
   ],
 
-  cities: [
-    { title: "Jakarta", url: "/undangan-digital/jakarta" },
-    { title: "Bandung", url: "/undangan-digital/bandung" },
-    { title: "Surabaya", url: "/undangan-digital/surabaya" }
-  ]
+  cities: cities.map((c) => ({
+    title: c.city,
+    url: `/undangan-digital/${c.slug}`
+  }))
 };
