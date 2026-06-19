@@ -1,4 +1,7 @@
 ---
+import Hero from "../components/Hero.astro";
+import CTA from "../components/CTA.astro";
+
 const cities = ["Jakarta", "Bandung", "Surabaya", "Yogyakarta"];
 ---
 
@@ -6,17 +9,19 @@ const cities = ["Jakarta", "Bandung", "Surabaya", "Yogyakarta"];
   <head>
     <meta charset="UTF-8" />
     <title>Undangan Digital Indonesia</title>
-    <meta name="description" content="Jasa undangan digital modern, cepat, dan elegan untuk seluruh kota di Indonesia" />
+    <meta name="description" content="Undangan digital modern & elegan untuk seluruh kota di Indonesia" />
   </head>
 
   <body>
-    <header>
-      <h1>Undangan Digital Modern</h1>
-      <p>Solusi undangan pernikahan digital cepat & elegan</p>
-    </header>
+
+    <Hero
+      title="Undangan Digital Modern"
+      subtitle="Cepat, elegan, dan siap pakai untuk semua kota"
+    />
 
     <section>
       <h2>Kota Layanan</h2>
+
       <ul>
         {cities.map((city) => (
           <li>
@@ -28,20 +33,7 @@ const cities = ["Jakarta", "Bandung", "Surabaya", "Yogyakarta"];
       </ul>
     </section>
 
-    <section>
-      <h2>Kenapa Kami?</h2>
-      <ul>
-        <li>Desain profesional</li>
-        <li>Proses cepat</li>
-        <li>Harga terjangkau</li>
-      </ul>
-    </section>
+    <CTA phone="628XXXXXXXXXX" />
 
-    <section>
-      <h2>Hubungi Kami</h2>
-      <a href="https://wa.me/628XXXXXXXXXX">
-        Chat WhatsApp
-      </a>
-    </section>
   </body>
 </html>
