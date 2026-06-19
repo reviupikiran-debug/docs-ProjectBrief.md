@@ -1,0 +1,27 @@
+[
+  {
+    "city": "Jakarta",
+    "slug": "jakarta",
+    "province": "DKI Jakarta"
+  },
+  {
+    "city": "Bandung",
+    "slug": "bandung",
+    "province": "Jawa Barat"
+  },
+  {
+    "city": "Surabaya",
+    "slug": "surabaya",
+    "province": "Jawa Timur"
+  },
+  {
+    "city": "Yogyakarta",
+    "slug": "yogyakarta",
+    "province": "DI Yogyakarta"
+  },
+  {
+    "city": "Semarang",
+    "slug": "semarang",
+    "province": "Jawa Tengah"
+  }
+]
