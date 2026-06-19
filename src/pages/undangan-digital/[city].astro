@@ -1,0 +1,43 @@
+---
+import cities from "../../../data/cities.json";
+
+export async function getStaticPaths() {
+  return cities.map((item) => ({
+    params: { city: item.slug },
+    props: item,
+  }));
+}
+
+const { city, province } = Astro.props;
+---
+
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Undangan Digital {city}</title>
+    <meta name="description" content={`Jasa undangan digital di ${city}, ${province}`} />
+  </head>
+
+  <body>
+    <header>
+      <h1>Undangan Digital {city}</h1>
+      <p>Layanan undangan digital di {city}, {province}</p>
+    </header>
+
+    <section>
+      <h2>Kenapa memilih layanan kami?</h2>
+      <ul>
+        <li>Desain modern dan elegan</li>
+        <li>Proses cepat</li>
+        <li>Harga terjangkau</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pesan Sekarang</h2>
+      <a href="https://wa.me/628XXXXXXXXXX">
+        Chat WhatsApp
+      </a>
+    </section>
+  </body>
+</html>
