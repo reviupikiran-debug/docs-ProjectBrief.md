@@ -1,8 +1,7 @@
 ---
 import Hero from "../components/Hero.astro";
 import CTA from "../components/CTA.astro";
-
-const cities = ["Jakarta", "Bandung", "Surabaya", "Yogyakarta"];
+import { internalLinks } from "../data/links";
 ---
 
 <html lang="id">
@@ -19,14 +18,30 @@ const cities = ["Jakarta", "Bandung", "Surabaya", "Yogyakarta"];
       subtitle="Cepat, elegan, dan siap pakai untuk semua kota"
     />
 
+    <!-- CITY HUB (SEO LINK DISTRIBUTION) -->
     <section>
       <h2>Kota Layanan</h2>
 
       <ul>
-        {cities.map((city) => (
+        {internalLinks.cities.map((item) => (
           <li>
-            <a href={`/undangan-digital/${city.toLowerCase()}`}>
-              Undangan Digital {city}
+            <a href={item.url}>
+              Undangan Digital {item.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- BLOG HUB (TOPICAL AUTHORITY BUILDER) -->
+    <section>
+      <h2>Artikel Populer</h2>
+
+      <ul>
+        {internalLinks.blog.map((item) => (
+          <li>
+            <a href={item.url}>
+              {item.title}
             </a>
           </li>
         ))}
