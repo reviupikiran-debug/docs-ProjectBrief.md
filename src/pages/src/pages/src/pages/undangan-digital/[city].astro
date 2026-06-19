@@ -1,3 +1,9 @@
+---
+const { city, province } = Astro.props;
+---
+
+<html lang="id">
+
 <head>
   <meta charset="UTF-8" />
 
@@ -12,3 +18,47 @@
 
   <link rel="canonical" href={`https://example.com/undangan-digital/${city}`} />
 </head>
+
+<body>
+
+  <header>
+    <h1>Undangan Digital {city}</h1>
+    <p>Layanan undangan digital modern di {city}, {province}</p>
+  </header>
+
+  <section>
+    <h2>Keunggulan Layanan</h2>
+    <ul>
+      <li>Desain modern dan elegan</li>
+      <li>Proses cepat</li>
+      <li>Harga terjangkau</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pesan Sekarang</h2>
+    <a href="https://wa.me/628XXXXXXXXXX">
+      Chat via WhatsApp
+    </a>
+  </section>
+
+  <!-- SCHEMA SEO (GOOGLE STRUCTURED DATA) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Undangan Digital {city}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{city}",
+      "addressRegion": "{province}",
+      "addressCountry": "ID"
+    },
+    "description": "Jasa undangan digital modern di {city}",
+    "url": "https://example.com/undangan-digital/{city}"
+  }
+  </script>
+
+</body>
+
+</html>
