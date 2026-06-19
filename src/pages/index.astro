@@ -1,0 +1,47 @@
+---
+const cities = ["Jakarta", "Bandung", "Surabaya", "Yogyakarta"];
+---
+
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Undangan Digital Indonesia</title>
+    <meta name="description" content="Jasa undangan digital modern, cepat, dan elegan untuk seluruh kota di Indonesia" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Undangan Digital Modern</h1>
+      <p>Solusi undangan pernikahan digital cepat & elegan</p>
+    </header>
+
+    <section>
+      <h2>Kota Layanan</h2>
+      <ul>
+        {cities.map((city) => (
+          <li>
+            <a href={`/undangan-digital/${city.toLowerCase()}`}>
+              Undangan Digital {city}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <h2>Kenapa Kami?</h2>
+      <ul>
+        <li>Desain profesional</li>
+        <li>Proses cepat</li>
+        <li>Harga terjangkau</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Hubungi Kami</h2>
+      <a href="https://wa.me/628XXXXXXXXXX">
+        Chat WhatsApp
+      </a>
+    </section>
+  </body>
+</html>
