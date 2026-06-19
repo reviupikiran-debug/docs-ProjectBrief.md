@@ -1,6 +1,6 @@
 # Project Brief — Undangan Digital SEO System
 
----
+--
 
 ## 1. Ringkasan Proyek
 Sistem ini adalah website berbasis SEO lokal yang menargetkan kata kunci:
