@@ -1,0 +1,25 @@
+---
+const { phone } = Astro.props;
+---
+
+<section style="padding: 40px 20px; text-align: center; background: #f5f5f5;">
+  <h2>Pesan Undangan Digital Sekarang</h2>
+
+  <p style="margin-bottom: 20px;">
+    Respon cepat via WhatsApp
+  </p>
+
+  <a
+    href={`https://wa.me/${phone}`}
+    style="
+      display: inline-block;
+      padding: 12px 20px;
+      background: green;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    "
+  >
+    Chat WhatsApp
+  </a>
+</section>
