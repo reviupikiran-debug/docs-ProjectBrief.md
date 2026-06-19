@@ -1,7 +1,3 @@
-# docs-ProjectBrief.md
-Project Undangan Digital SEO System
-
-
 # Project Brief — Undangan Digital SEO System
 
 ---
